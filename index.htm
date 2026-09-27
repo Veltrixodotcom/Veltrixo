@@ -1,51 +1,34 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VELTRIXO | Digital Agency Management System</title>
 
-<script>
+```
+<title>VELTRIXO | Digital Agency Management System</title>
 
-const backgrounds = [
-    "images/background1.jpg",
-    "images/background2.jpg",
-    "images/background3.jpg",
-    "images/background4.jpg",
-    "images/background5.jpg"
-];
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-let current = 0;
-	document.body.style.backgroundImage =
-		'url("' + backgrounds[current] + '")';
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+```
 
-setInterval(function () {
-
-    current = (current + 1) % backgrounds.length;
-
-    document.body.style.backgroundImage =
-        'url("' + backgrounds[current] + '")';
-
-}, 5000);
-
-</script>
-	
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+```
 <!-- ================= NAVBAR ================= -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="#">
@@ -53,9 +36,7 @@ setInterval(function () {
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
@@ -83,8 +64,10 @@ setInterval(function () {
                 </li>
 
                 <li class="nav-item">
-   		   <a class="nav-link" href="freelancer_registration.php">Freelancer</a>
-		</li>
+                    <a class="nav-link" href="freelancer_registration.php">
+                        Freelancer
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#pricing">Pricing</a>
@@ -102,26 +85,31 @@ setInterval(function () {
                     <a class="nav-link" href="#careers">Careers</a>
                 </li>
 
-                <li class="nav-item">  
-   		    <a class="nav-link" href="register.php">Register</a>
-		</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.php">
+                        Register
+                    </a>
+                </li>
 
                 <li class="nav-item">
-   	             <a class="nav-link btn btn-primary text-white px-3 ms-lg-2" href="login.php">
-                Login
-                </a>
-		</li>
+                    <a class="nav-link btn btn-primary text-white px-3 ms-lg-2" href="login.php">
+                        Login
+                    </a>
+                </li>
 
             </ul>
 
         </div>
 
     </div>
+
 </nav>
+
 
 <!-- ================= HOME ================= -->
 
 <section id="home" class="py-5">
+
     <div class="container text-center">
 
         <h1 class="display-4 fw-bold">
@@ -133,27 +121,41 @@ setInterval(function () {
         </p>
 
     </div>
+
 </section>
+
 
 <!-- ================= ABOUT ================= -->
 
 <section id="about" class="py-5 bg-light">
+
     <div class="container">
 
         <h2>About Us</h2>
 
         <p>
             Empowering Businesses Through 15 Years of Experience
+        </p>
 
-For the past 15 years, we have been helping businesses, organizations, and professionals simplify their operations, improve productivity, and embrace technology through practical and innovative solutions.
+        <p>
+            For the past 15 years, we have been helping businesses,
+            organizations, and professionals simplify their operations,
+            improve productivity, and embrace technology through practical
+            and innovative solutions.
+        </p>
 
-Our experience spans across Marketing Services, Digital Locker Solutions, Data Records Management, IT Support, Business Solution Software, Human Resource Management. We combine industry experience with technology to create solutions that are designed to solve real-world business challenges.
+        <p>
+            Our experience spans across Marketing Services, Digital Locker
+            Solutions, Data Records Management, IT Support, Business
+            Solution Software, Human Resource Management. We combine
+            industry experience with technology to create solutions that
+            are designed to solve real-world business challenges.
         </p>
 
     </div>
+
 </section>
 
-<!-- ================= SERVICES ================= -->
 
 <!-- ================= SERVICES ================= -->
 
@@ -161,23 +163,28 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
     <div class="container">
 
-        <h2 class="mb-4">Our Services</h2>
+        <h2 class="mb-4">
+            Our Services
+        </h2>
 
         <div class="row g-4">
 
+
             <!-- Marketing Services -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/marketing.jpg"
-                         class="card-img-top service-image"
-                         alt="Marketing Services">
+                        class="card-img-top service-image"
+                        alt="Marketing Services">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/marketing.php"
-                               class="service-link">
+                                class="service-link">
                                 Marketing Services
                             </a>
                         </h4>
@@ -189,23 +196,27 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
 
             <!-- Digital Locker -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/digital-locker.jpg"
-                         class="card-img-top service-image"
-                         alt="Digital Locker">
+                        class="card-img-top service-image"
+                        alt="Digital Locker">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/digital-locker.php"
-                               class="service-link">
+                                class="service-link">
                                 Digital Locker
                             </a>
                         </h4>
@@ -216,23 +227,27 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
 
             <!-- Data Records -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/data-records.jpg"
-                         class="card-img-top service-image"
-                         alt="Data Records Management">
+                        class="card-img-top service-image"
+                        alt="Data Records Management">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/data-records.php"
-                               class="service-link">
+                                class="service-link">
                                 Data Records Management
                             </a>
                         </h4>
@@ -244,23 +259,27 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
 
             <!-- IT Support -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/it-support.jpg"
-                         class="card-img-top service-image"
-                         alt="IT Support">
+                        class="card-img-top service-image"
+                        alt="IT Support">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/it-support.php"
-                               class="service-link">
+                                class="service-link">
                                 IT Support
                             </a>
                         </h4>
@@ -272,23 +291,27 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
 
             <!-- Business Software -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/business-software.jpg"
-                         class="card-img-top service-image"
-                         alt="Business Solution Software">
+                        class="card-img-top service-image"
+                        alt="Business Solution Software">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/business-software.php"
-                               class="service-link">
+                                class="service-link">
                                 Business Solution Software
                             </a>
                         </h4>
@@ -300,23 +323,27 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
 
             <!-- Human Resource Management -->
+
             <div class="col-md-4">
+
                 <div class="card service-card h-100">
 
                     <img src="Images/hr-management.jpg"
-                         class="card-img-top service-image"
-                         alt="Human Resource Management">
+                        class="card-img-top service-image"
+                        alt="Human Resource Management">
 
                     <div class="card-body">
 
                         <h4>
                             <a href="services/hr-management.php"
-                               class="service-link">
+                                class="service-link">
                                 Human Resource Management
                             </a>
                         </h4>
@@ -328,7 +355,9 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                         </p>
 
                     </div>
+
                 </div>
+
             </div>
 
         </div>
@@ -336,54 +365,110 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
     </div>
 
 </section>
+
+
 <!-- ================= INDUSTRIES ================= -->
 
 <section id="industries" class="py-5 bg-light">
 
     <div class="container">
 
-    <h2>Industries We Serve</h2>
+        <h2>
+            Industries We Serve
+        </h2>
 
-    <div class="industry-grid">
+        <div class="industry-grid">
 
-        <div class="industry-card">
-            <img src="images/healthcare.jpg" alt="Healthcare">
-            <h3>Healthcare</h3>
-        </div>
 
-        <div class="industry-card">
-            <img src="images/education.jpg" alt="Education">
-            <h3>Education</h3>
-        </div>
+            <div class="industry-card">
 
-        <div class="industry-card">
-            <img src="images/automobile.jpg" alt="Automobile">
-            <h3>Automobile</h3>
-        </div>
+                <img src="images/healthcare.jpg"
+                    alt="Healthcare">
 
-        <div class="industry-card">
-            <img src="images/hotel.jpg" alt="Hotels">
-            <h3>Hotels</h3>
-        </div>
+                <h3>
+                    Healthcare
+                </h3>
 
-        <div class="industry-card">
-            <img src="images/retail.jpg" alt="Retail">
-            <h3>Retail</h3>
-        </div>
+            </div>
 
-        <div class="industry-card">
-            <img src="images/realestate.jpg" alt="Real Estate">
-            <h3>Real Estate</h3>
-        </div>
 
-        <div class="industry-card">
-            <img src="images/manufacturing.jpg" alt="Manufacturing">
-            <h3>Manufacturing</h3>
+            <div class="industry-card">
+
+                <img src="images/education.jpg"
+                    alt="Education">
+
+                <h3>
+                    Education
+                </h3>
+
+            </div>
+
+
+            <div class="industry-card">
+
+                <img src="images/automobile.jpg"
+                    alt="Automobile">
+
+                <h3>
+                    Automobile
+                </h3>
+
+            </div>
+
+
+            <div class="industry-card">
+
+                <img src="images/hotel.jpg"
+                    alt="Hotels">
+
+                <h3>
+                    Hotels
+                </h3>
+
+            </div>
+
+
+            <div class="industry-card">
+
+                <img src="images/retail.jpg"
+                    alt="Retail">
+
+                <h3>
+                    Retail
+                </h3>
+
+            </div>
+
+
+            <div class="industry-card">
+
+                <img src="images/realestate.jpg"
+                    alt="Real Estate">
+
+                <h3>
+                    Real Estate
+                </h3>
+
+            </div>
+
+
+            <div class="industry-card">
+
+                <img src="images/manufacturing.jpg"
+                    alt="Manufacturing">
+
+                <h3>
+                    Manufacturing
+                </h3>
+
+            </div>
+
         </div>
 
     </div>
 
 </section>
+
 
 <!-- ================= PORTFOLIO ================= -->
 
@@ -391,7 +476,9 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
     <div class="container">
 
-        <h2>Portfolio</h2>
+        <h2>
+            Portfolio
+        </h2>
 
         <p>
             Showcase your completed projects here.
@@ -401,13 +488,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= CASE STUDIES ================= -->
 
 <section id="case-studies" class="py-5 bg-light">
 
     <div class="container">
 
-        <h2>Case Studies</h2>
+        <h2>
+            Case Studies
+        </h2>
 
         <p>
             Share client success stories with measurable results.
@@ -417,13 +507,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= PRICING ================= -->
 
 <section id="pricing" class="py-5">
 
     <div class="container">
 
-        <h2>Pricing</h2>
+        <h2>
+            Pricing
+        </h2>
 
         <p>
             Display your monthly and yearly service packages.
@@ -433,13 +526,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= BLOG ================= -->
 
 <section id="blog" class="py-5 bg-light">
 
     <div class="container">
 
-        <h2>Latest Blogs</h2>
+        <h2>
+            Latest Blogs
+        </h2>
 
         <p>
             Share marketing tips and industry insights.
@@ -449,20 +545,34 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= RESOURCES ================= -->
 
 <section id="resources" class="py-5">
 
     <div class="container">
 
-        <h2>Resources</h2>
+        <h2>
+            Resources
+        </h2>
 
         <ul>
 
-            <li>Free eBooks</li>
-            <li>Marketing Templates</li>
-            <li>Business Guides</li>
-            <li>SEO Checklist</li>
+            <li>
+                Free eBooks
+            </li>
+
+            <li>
+                Marketing Templates
+            </li>
+
+            <li>
+                Business Guides
+            </li>
+
+            <li>
+                SEO Checklist
+            </li>
 
         </ul>
 
@@ -470,13 +580,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= CAREERS ================= -->
 
 <section id="careers" class="py-5 bg-light">
 
     <div class="container">
 
-        <h2>Careers</h2>
+        <h2>
+            Careers
+        </h2>
 
         <p>
             Join our growing team.
@@ -486,13 +599,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= CONTACT ================= -->
 
 <section id="contact" class="py-5">
 
     <div class="container">
 
-        <h2>Contact Us</h2>
+        <h2>
+            Contact Us
+        </h2>
 
         <form>
 
@@ -505,6 +621,7 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
             </div>
 
+
             <div class="mb-3">
 
                 <input
@@ -514,6 +631,7 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
             </div>
 
+
             <div class="mb-3">
 
                 <textarea
@@ -522,6 +640,7 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
                     placeholder="Your Message"></textarea>
 
             </div>
+
 
             <button class="btn btn-primary">
                 Send Message
@@ -533,13 +652,16 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </section>
 
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-dark text-white text-center p-4">
 
     <div class="container">
 
-        <h5>VELTRIXO</h5>
+        <h5>
+            VELTRIXO
+        </h5>
 
         <p>
             Transforming Businesses Through Digital Excellence
@@ -553,31 +675,44 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </footer>
 
-	<script>
-const backgrounds = [
-    "images/background1.jpg",
-    "images/background2.jpg",
-    "images/background3.jpg",
-    "images/background4.jpg",
-    "images/background5.jpg"
-];
 
-let current = 0;
+<!-- ================= BACKGROUND IMAGE SLIDER ================= -->
 
-function changeBackground() {
-    document.body.style.backgroundImage =
-        `url("${backgrounds[current]}")`;
+<script>
 
-    current = (current + 1) % backgrounds.length;
-}
+    const backgrounds = [
+        "images/background1.jpg",
+        "images/background2.jpg",
+        "images/background3.jpg",
+        "images/background4.jpg",
+        "images/background5.jpg"
+    ];
 
-changeBackground();
+    let current = 0;
 
-setInterval(changeBackground, 5000);
+    function changeBackground() {
+
+        document.body.style.backgroundImage =
+            `url("${backgrounds[current]}")`;
+
+        current =
+            (current + 1) % backgrounds.length;
+    }
+
+    // Load first background
+    changeBackground();
+
+    // Change background every 5 seconds
+    setInterval(changeBackground, 5000);
+
 </script>
 
-<!-- Bootstrap JS -->
+
+<!-- ================= BOOTSTRAP JS ================= -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+```
 
 </body>
+
 </html>
