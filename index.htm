@@ -553,7 +553,33 @@ Our experience spans across Marketing Services, Digital Locker Solutions, Data R
 
 </footer>
 
+	<script>
+const backgrounds = [
+    "images/background1.jpg",
+    "images/background2.jpg",
+    "images/background3.jpg",
+    "images/background4.jpg",
+    "images/background5.jpg"
+];
+
+let current = 0;
+
+function changeBackground() {
+    document.body.style.backgroundImage =
+        `url("${backgrounds[current]}")`;
+
+    current = (current + 1) % backgrounds.length;
+}
+
+changeBackground();
+
+setInterval(changeBackground, 5000);
+</script>
+
 <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<<!-- Bootstrap JS -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
