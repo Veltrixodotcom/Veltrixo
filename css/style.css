@@ -15,7 +15,7 @@ body {
 }
 .auth-page {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1246c8, #1e3a8a);
+    background: transparent;
 }
 
 .auth-card {
@@ -81,6 +81,7 @@ body {
 
 .dashboard-page {
     min-height: 100vh;
+    background: transparent;
 }
 
 .table > :not(caption) > * > * {
