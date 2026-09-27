@@ -1,0 +1,119 @@
+:root {
+    --brand: #2563eb;
+    --brand-dark: #dadde7;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f8fafc;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1e293b;
+}
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1246c8, #1e3a8a);
+}
+
+.auth-card {
+    max-width: 850px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.18);
+}
+
+.login-card {
+    max-width: 460px;
+    margin-top: 8vh;
+}
+
+.brand {
+    color: var(--brand);
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border-radius: 10px;
+}
+
+.btn-brand {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+    font-weight: 600;
+    min-height: 46px;
+    border-radius: 10px;
+}
+
+.btn-brand:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    color: #fff;
+}
+
+.stat-card,
+.dashboard-card {
+    background: transparent;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 30px rgba(15,23,42,.05);
+}
+
+.stat-card span {
+    display: block;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    font-size: 32px;
+    color: var(--brand-dark);
+}
+
+.dashboard-page {
+    min-height: 100vh;
+}
+
+.table > :not(caption) > * > * {
+    padding: 14px 10px;
+}
+
+/* ================= SERVICES ================= */
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-link {
+    color: #172a46;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}

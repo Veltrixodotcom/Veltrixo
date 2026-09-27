@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELTRIXO | Digital Agency Management System</title>
+
+<script>
+
+const backgrounds = [
+    "Images/background1.jpg",
+    "Images/background2.jpg",
+    "Images/background3.jpg",
+    "Images/background4.jpg",
+    "Images/background5.jpg"
+];
+
+let current = 0;
+
+setInterval(function () {
+
+    current = (current + 1) % backgrounds.length;
+
+    document.body.style.backgroundImage =
+        'url("' + backgrounds[current] + '")';
+
+}, 5000);
+
+</script>
+	
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            VELTRIXO
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#industries">Industries</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+   		   <a class="nav-link" href="freelancer_registration.php">Freelancer</a>
+		</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources">Resources</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#careers">Careers</a>
+                </li>
+
+                <li class="nav-item">  
+   		    <a class="nav-link" href="register.php">Register</a>
+		</li>
+
+                <li class="nav-item">
+   	             <a class="nav-link btn btn-primary text-white px-3 ms-lg-2" href="login.php">
+                Login
+                </a>
+		</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="py-5">
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold">
+            Welcome to VELTRIXO
+        </h1>
+
+        <p class="lead">
+            Transforming Businesses Through Digital Excellence
+        </p>
+
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+
+        <h2>About Us</h2>
+
+        <p>
+            Empowering Businesses Through 15 Years of Experience
+
+For the past 15 years, we have been helping businesses, organizations, and professionals simplify their operations, improve productivity, and embrace technology through practical and innovative solutions.
+
+Our experience spans across Marketing Services, Digital Locker Solutions, Data Records Management, IT Support, Business Solution Software, Human Resource Management. We combine industry experience with technology to create solutions that are designed to solve real-world business challenges.
+        </p>
+
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="py-5">
+
+    <div class="container">
+
+        <h2 class="mb-4">Our Services</h2>
+
+        <div class="row g-4">
+
+            <!-- Marketing Services -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/marketing.jpg"
+                         class="card-img-top service-image"
+                         alt="Marketing Services">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/marketing.php"
+                               class="service-link">
+                                Marketing Services
+                            </a>
+                        </h4>
+
+                        <p>
+                            We help businesses strengthen market presence
+                            through strategic marketing, customer engagement,
+                            and business development solutions.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Digital Locker -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/digital-locker.jpg"
+                         class="card-img-top service-image"
+                         alt="Digital Locker">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/digital-locker.php"
+                               class="service-link">
+                                Digital Locker
+                            </a>
+                        </h4>
+
+                        <p>
+                            Securely organize and manage important digital
+                            documents and information in one convenient location.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Data Records -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/data-records.jpg"
+                         class="card-img-top service-image"
+                         alt="Data Records Management">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/data-records.php"
+                               class="service-link">
+                                Data Records Management
+                            </a>
+                        </h4>
+
+                        <p>
+                            We provide structured solutions for managing,
+                            organizing, maintaining, and accessing business
+                            records and information efficiently.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- IT Support -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/it-support.jpg"
+                         class="card-img-top service-image"
+                         alt="IT Support">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/it-support.php"
+                               class="service-link">
+                                IT Support
+                            </a>
+                        </h4>
+
+                        <p>
+                            From technical assistance and troubleshooting
+                            to system support, we help businesses maintain
+                            reliable and efficient IT operations.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Business Software -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/business-software.jpg"
+                         class="card-img-top service-image"
+                         alt="Business Solution Software">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/business-software.php"
+                               class="service-link">
+                                Business Solution Software
+                            </a>
+                        </h4>
+
+                        <p>
+                            We develop and provide software solutions designed
+                            to simplify business processes, improve workflow,
+                            and support better management and decision-making.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Human Resource Management -->
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <img src="Images/hr-management.jpg"
+                         class="card-img-top service-image"
+                         alt="Human Resource Management">
+
+                    <div class="card-body">
+
+                        <h4>
+                            <a href="services/hr-management.php"
+                               class="service-link">
+                                Human Resource Management
+                            </a>
+                        </h4>
+
+                        <p>
+                            Our HR solutions help organizations manage
+                            employee information, recruitment, attendance,
+                            performance, and other essential HR processes.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= INDUSTRIES ================= -->
+
+<section id="industries" class="py-5 bg-light">
+
+    <div class="container">
+
+    <h2>Industries We Serve</h2>
+
+    <div class="industry-grid">
+
+        <div class="industry-card">
+            <img src="images/healthcare.jpg" alt="Healthcare">
+            <h3>Healthcare</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/education.jpg" alt="Education">
+            <h3>Education</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/automobile.jpg" alt="Automobile">
+            <h3>Automobile</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/hotel.jpg" alt="Hotels">
+            <h3>Hotels</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/retail.jpg" alt="Retail">
+            <h3>Retail</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/realestate.jpg" alt="Real Estate">
+            <h3>Real Estate</h3>
+        </div>
+
+        <div class="industry-card">
+            <img src="images/manufacturing.jpg" alt="Manufacturing">
+            <h3>Manufacturing</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="portfolio" class="py-5">
+
+    <div class="container">
+
+        <h2>Portfolio</h2>
+
+        <p>
+            Showcase your completed projects here.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+
+<section id="case-studies" class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2>Case Studies</h2>
+
+        <p>
+            Share client success stories with measurable results.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= PRICING ================= -->
+
+<section id="pricing" class="py-5">
+
+    <div class="container">
+
+        <h2>Pricing</h2>
+
+        <p>
+            Display your monthly and yearly service packages.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= BLOG ================= -->
+
+<section id="blog" class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2>Latest Blogs</h2>
+
+        <p>
+            Share marketing tips and industry insights.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= RESOURCES ================= -->
+
+<section id="resources" class="py-5">
+
+    <div class="container">
+
+        <h2>Resources</h2>
+
+        <ul>
+
+            <li>Free eBooks</li>
+            <li>Marketing Templates</li>
+            <li>Business Guides</li>
+            <li>SEO Checklist</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ================= CAREERS ================= -->
+
+<section id="careers" class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2>Careers</h2>
+
+        <p>
+            Join our growing team.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="py-5">
+
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <div class="mb-3">
+
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name">
+
+            </div>
+
+            <div class="mb-3">
+
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address">
+
+            </div>
+
+            <div class="mb-3">
+
+                <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Your Message"></textarea>
+
+            </div>
+
+            <button class="btn btn-primary">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white text-center p-4">
+
+    <div class="container">
+
+        <h5>VELTRIXO</h5>
+
+        <p>
+            Transforming Businesses Through Digital Excellence
+        </p>
+
+        <small>
+            © 2026 VELTRIXO. All Rights Reserved.
+        </small>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
