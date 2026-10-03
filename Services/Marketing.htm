@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Marketing Services | Traditional & Digital</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e3a8a;
+            --accent-traditional: #f59e0b;
+            --accent-digital: #10b981;
+            --text-main: #1f2937;
+            --bg-light: #f9fafb;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+        }
+
+        .traditional-title {
+            border-image: linear-gradient(to right, var(--accent-traditional) 100px, #e5e7eb 100px) 1;
+        }
+
+        .digital-title {
+            border-image: linear-gradient(to right, var(--accent-digital) 100px, #e5e7eb 100px) 1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        /* Clickable Card Styling */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%; /* Ensures all cards in a row have equal height */
+        }
+
+        .card-link:hover .card {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+        .traditional-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-traditional);
+        }
+
+        .digital-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-digital);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Comprehensive Marketing Solutions</h1>
+            <p>We bridge the gap between time-tested strategies and modern digital ecosystems to grow your brand's presence everywhere it matters.</p>
+        </header>
+
+        <!-- TRADITIONAL MARKETING SERVICES -->
+        <section class="services-section">
+            <h2 class="section-title traditional-title">Traditional Marketing Services</h2>
+            <div class="grid">
+                
+                <!-- 1. Print Advertisement -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card traditional-card">
+                        <h3>Print Advertisement</h3>
+                        <p>High-impact placement in newspapers, magazines, brochures, and flyers designed to capture localized physical attention.</p>
+                    </div>
+                </a>
+
+                <!-- 2. Outdoor Advertisement -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card traditional-card">
+                        <h3>Outdoor Advertisement</h3>
+                        <p>Dominant billboard displays, transit advertising, and signage layouts that make your brand unmissable on the move.</p>
+                    </div>
+                </a>
+
+                <!-- 3. Direct Mail -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card traditional-card">
+                        <h3>Direct Mail</h3>
+                        <p>Highly targeted physical catalogs, postcards, and custom corporate mailers delivered straight to your prospect's doorstep.</p>
+                    </div>
+                </a>
+
+                <!-- 4. Direct Interaction -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card traditional-card">
+                        <h3>Direct Interaction</h3>
+                        <p>Face-to-face experiential marketing activations, trade shows, events, and field operations built around real-world human connection.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- DIGITAL MARKETING SERVICES -->
+        <section class="services-section">
+            <h2 class="section-title digital-title">Digital Marketing Services</h2>
+            <div class="grid">
+
+                <!-- 1. Visual Social Media -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>Visual Social Media</h3>
+                        <p>Engaging graphic creation, short-form video optimization, and strategic distribution across Instagram, TikTok, Pinterest, and Meta platforms.</p>
+                    </div>
+                </a>
+
+                <!-- 2. Google Business Profile -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>Google Business Profile</h3>
+                        <p>Complete map search optimization, localized profile updates, and visibility management to dominate local engine inquiries.</p>
+                    </div>
+                </a>
+
+                <!-- 3. Online Review Management -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>Online Review Management</h3>
+                        <p>Structured review acquisition strategies and reputational monitoring to build dynamic digital proof and consumer trust.</p>
+                    </div>
+                </a>
+
+                <!-- 4. Online Booking & SMS Reminders -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>Online Booking & SMS Reminders</h3>
+                        <p>Automated scheduling software integration paired with text alerts to systematically slash appointment no-show rates.</p>
+                    </div>
+                </a>
+
+                <!-- 5. Email Marketing -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>Email Marketing</h3>
+                        <p>Tailored newsletter setups, lifecycle workflows, and targeted broadcast systems engineered to nurture leads into conversions.</p>
+                    </div>
+                </a>
+
+                <!-- 6. WhatsApp & SMS Campaigns -->
+                <a href="https://yourwebsite.com" class="card-link">
+                    <div class="card digital-card">
+                        <h3>WhatsApp & SMS Campaigns</h3>
+                        <p>Instant conversational messaging layouts designed for high-open-rate product launches, discounts, and customer support.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
